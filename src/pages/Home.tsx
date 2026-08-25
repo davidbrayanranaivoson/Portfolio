@@ -12,7 +12,7 @@ import About from "./About";
 export default function Home() {
   return (
     <div className="">
-      <header className="flex gap-4 px-14 pb-12">
+      <header className="flex gap-4 px-14 pb-14">
         <aside className="flex flex-col gap-7 justify-start pt-16">
           <div className="flex">
             <div className="flex text-[12px] gap-1 badge-soft rounded-full p-3 items-center justify-center">

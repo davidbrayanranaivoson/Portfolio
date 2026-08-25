@@ -13,7 +13,7 @@ export default function MainLayout() {
         <div>
           <input
             type="button"
-            value="Nous contacter"
+            value="Me contacter"
             className="btn btn-info text-white bg-linear-to-l from-blue-400 to-blue-900"
           />
         </div>
