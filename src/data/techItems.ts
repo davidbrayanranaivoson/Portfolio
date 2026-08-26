@@ -1,0 +1,51 @@
+export const techItems = [
+  {
+    id: 1,
+    nom: "Javascript",
+    link: "javascript.png",
+    niveau: "80%",
+    nvClasse: "w-8/10",
+  },
+  {
+    id: 2,
+    nom: "PHP",
+    link: "elephpant.png",
+    niveau: "70%",
+    nvClasse: "w-7/10",
+  },
+  {
+    id: 3,
+    nom: "React / Nextjs",
+    link: "react-logo.png",
+    niveau: "80%",
+    nvClasse: "w-8/10",
+  },
+  {
+    id: 4,
+    nom: "Html",
+    link: "logo_html.png",
+    niveau: "90%",
+    nvClasse: "w-9/10",
+  },
+  {
+    id: 5,
+    nom: "Tailwind Css",
+    link: "logo-tailwind-css.png",
+    niveau: "90%",
+    nvClasse: "w-9/10",
+  },
+  {
+    id: 6,
+    nom: "Mysql / MongoDB",
+    link: "mongodb-logo.png",
+    niveau: "50%",
+    nvClasse: "w-5/10",
+  },
+  {
+    id: 7,
+    nom: "Git",
+    link: "git.png",
+    niveau: "50%",
+    nvClasse: "w-5/10",
+  },
+];

@@ -5,6 +5,5 @@ export type CardsTypeProps = {
   titleCard: string;
   expirienceCard: string;
   noteCard: string;
-  iconCard: ReactElement
-
+  iconCard: ReactElement;
 };
