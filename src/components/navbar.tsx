@@ -10,7 +10,7 @@ export function NavBar() {
         <a href="#Projets">Projets</a>
         <a href="#Services">Services</a>
         <a href="#Temoignages">Témoignages</a>
-        <a href="#Contacts">Contacts</a>
+        <Link to="Statistics">Contacts</Link>
       </ul>
     </nav>
   );

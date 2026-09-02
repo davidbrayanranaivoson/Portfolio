@@ -16,7 +16,7 @@ export function CardHome({
       <span className="text-gray-400">{titleCard}</span>
       <span className="text-2xl font-semibold opacity-100">
         {expirienceCard}
-      </span> 
+      </span>
       <div className="flex justify-between gap-2 items-center text-gray-400">
         {noteCard} {iconCard}{" "}
       </div>

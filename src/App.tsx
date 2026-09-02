@@ -16,6 +16,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="Statistics" element={<Projet />} />
       </Route>
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 }

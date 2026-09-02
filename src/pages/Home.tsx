@@ -8,10 +8,11 @@ import {
 import ImageLink from "../components/ImageLink";
 import { CardHome } from "../components/CardHome";
 import About from "./About";
+import { NavBar } from "../components/navbar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <header className="flex gap-4 px-14 pb-14">
         <aside className="flex flex-col gap-7 justify-start pt-16">
           <div className="flex">
