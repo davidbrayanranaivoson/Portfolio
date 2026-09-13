@@ -1,6 +1,7 @@
 import { Download } from "lucide-react";
 import { techItems } from "../data/techItems";
 import type { techCardsTypeProps } from "../types/techCardsTypeProps";
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -53,11 +54,16 @@ function About() {
           <h1 className="font-semibold text-2xl pt-2 pb-6">
             Technologies que j'utilise
           </h1>
-          <div className="flex flex-row justify-between gap-8 flex-wrap">
+          <motion.div
+            className="flex flex-row justify-between gap-4 flex-wrap"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+          >
             {techItems.map((logo) => (
               <CardTechnologie logo={logo} key={logo.id} />
             ))}
-          </div>
+          </motion.div>
           <div className="mt-8 text-center">
             <input
               type="button"

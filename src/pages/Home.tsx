@@ -8,7 +8,7 @@ import {
 import ImageLink from "../components/ImageLink";
 import { CardHome } from "../components/CardHome";
 import About from "./About";
-import { NavBar } from "../components/navbar";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -48,35 +48,57 @@ export default function Home() {
         </aside>
         <aside className="flex  text-[12px] items-center justify-center relative grow pointer-events-none">
           <div className="flex justify-center items-center">
-            <CardHome
-              positionCard="top-35 left-0"
-              titleCard={"Exprérience"}
-              expirienceCard={"+2 ans"}
-              noteCard={"Développement"}
-              iconCard={<Heart className="size-4" />}
-            />
-            <CardHome
-              positionCard="top-35 right-5"
-              titleCard={"Projets réalisés"}
-              expirienceCard={"15+"}
-              noteCard={"Projets complets"}
-              iconCard={<Expand className="size-4" />}
-            />
-
-            <CardHome
-              positionCard="bottom-10 right-25"
-              titleCard={"Clients satisfaits"}
-              expirienceCard={"10+"}
-              noteCard={"Recommandations"}
-              iconCard={<DivideSquare className="size-4" />}
-            />
-            <img
-              src="/public/my-profil.png"
-              alt=""
-              width="80%"
-              className="rounded-full bg-linear-0 from-blue-300 to-blue-800"
-              onDragStart={(e) => e.preventDefault()}
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <CardHome
+                positionCard="top-35 left-0"
+                titleCard={"Exprérience"}
+                expirienceCard={"+2 ans"}
+                noteCard={"Développement"}
+                iconCard={<Heart className="size-4" />}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <CardHome
+                positionCard="top-35 right-5"
+                titleCard={"Projets réalisés"}
+                expirienceCard={"15+"}
+                noteCard={"Projets complets"}
+                iconCard={<Expand className="size-4" />}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+            >
+              <CardHome
+                positionCard="bottom-10 right-25"
+                titleCard={"Clients satisfaits"}
+                expirienceCard={"10+"}
+                noteCard={"Recommandations"}
+                iconCard={<DivideSquare className="size-4" />}
+              />
+            </motion.div>
+            <motion.div
+              className="rounded-full bg-linear-0 w-8/10 from-blue-300 to-blue-800"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+            >
+              <img
+                src="/public/my-profil.png"
+                alt=""
+                onDragStart={(e) => e.preventDefault()}
+              />
+            </motion.div>
           </div>
         </aside>
       </header>

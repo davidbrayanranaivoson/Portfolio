@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Projet from "./pages/Projet";
 import Home from "./pages/Home";
+import PageError from "./pages/PageError";
 
 // Inside your Dashboard Component, you'd render the CardTable component for each item in projectsData.
 
@@ -14,9 +15,9 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         {/* Pages normales */}
         <Route index element={<Home />} />
+        <Route path="*" element={<PageError />} />
         <Route path="Statistics" element={<Projet />} />
       </Route>
-      <Route path="*" element={<Home />} />
     </Routes>
   );
 }
