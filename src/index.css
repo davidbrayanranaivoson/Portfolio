@@ -4,8 +4,6 @@
     theme: dark
 }
 
-;
-
 .active {
 
     --tw-gradient-position: to top right;
@@ -33,8 +31,9 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 9px;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 8px;

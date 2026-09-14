@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import { ComponentAnimate } from "./animations/ComponentAnimate";
+import { motion } from "framer-motion";
 
 export function NavBar() {
   return (
-    <ComponentAnimate
+    <motion.div
       initial={{ y: -150 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
+      style={{ zIndex: 50 }}
+      className="absolute left-0 right-0"
     >
-      <div className="flex text-white justify-between items-center py-4 px-14 ">
+      <div className="flex text-white justify-between items-center py-4 px-14">
         <div className="flex items-center font-semibold">
           <span className="pr-1 text-2xl text-blue-400">DBR</span>
           <span>David Brayan RANAIVOSON</span>
@@ -16,9 +18,7 @@ export function NavBar() {
         <nav>
           <ul className="flex gap-5">
             <Link to="/">Accueil</Link>
-            <Link to="/#About" viewTransition={true}>
-              À propos
-            </Link>
+            <a href="/#About">À propos</a>
             <a href="#Competences">Compétences</a>
             <a href="#Projets">Projets</a>
             <a href="#Services">Services</a>
@@ -34,6 +34,6 @@ export function NavBar() {
           />
         </div>
       </div>
-    </ComponentAnimate>
+    </motion.div>
   );
 }

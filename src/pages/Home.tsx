@@ -13,19 +13,19 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <header className="flex gap-4 px-14 pb-14">
-        <aside className="flex flex-col gap-7 justify-start pt-16">
+      <header className="flex gap-4 px-14 h-lvh">
+        <aside className="flex flex-col gap-7 justify-start pt-30">
           <div className="flex">
             <div className="flex text-[12px] gap-1 badge-soft rounded-full p-3 items-center justify-center">
               <div className="bg-emerald-700 w-2 h-2 rounded-full"></div>
               <input type="button" value="Disponible pour freelance" />
             </div>{" "}
           </div>
-          <p className="text-5xl font-semibold font-stretch-90% grow-0">
+          <p className="text-5xl font-semibold font-stretch-90% grow-0 h-3/10">
             Je crée des sites web <br />
             <span className="text-blue-500">modernes et performants</span>
             <br />
-            pour votre business
+            <span>pour votre business</span>
           </p>
           <div className="text-gray-400">
             <p>Développeur Full Stack passionné par le web.</p>
@@ -48,45 +48,30 @@ export default function Home() {
         </aside>
         <aside className="flex  text-[12px] items-center justify-center relative grow pointer-events-none">
           <div className="flex justify-center items-center">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <CardHome
-                positionCard="top-35 left-0"
-                titleCard={"Exprérience"}
-                expirienceCard={"+2 ans"}
-                noteCard={"Développement"}
-                iconCard={<Heart className="size-4" />}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <CardHome
-                positionCard="top-35 right-5"
-                titleCard={"Projets réalisés"}
-                expirienceCard={"15+"}
-                noteCard={"Projets complets"}
-                iconCard={<Expand className="size-4" />}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-            >
-              <CardHome
-                positionCard="bottom-10 right-25"
-                titleCard={"Clients satisfaits"}
-                expirienceCard={"10+"}
-                noteCard={"Recommandations"}
-                iconCard={<DivideSquare className="size-4" />}
-              />
-            </motion.div>
+            <CardHome
+              positionCard="top-35 left-10"
+              titleCard={"Exprérience"}
+              expirienceCard={"+2 ans"}
+              noteCard={"Développement"}
+              iconCard={<Heart className="size-4" />}
+            />
+
+            <CardHome
+              positionCard="top-35 right-5"
+              titleCard={"Projets réalisés"}
+              expirienceCard={"15+"}
+              noteCard={"Projets complets"}
+              iconCard={<Expand className="size-4" />}
+            />
+
+            <CardHome
+              positionCard="bottom-10 right-25"
+              titleCard={"Clients satisfaits"}
+              expirienceCard={"10+"}
+              noteCard={"Recommandations"}
+              iconCard={<DivideSquare className="size-4" />}
+            />
+
             <motion.div
               className="rounded-full bg-linear-0 w-8/10 from-blue-300 to-blue-800"
               initial={{ opacity: 0 }}
