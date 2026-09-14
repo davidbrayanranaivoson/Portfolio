@@ -1,12 +1,9 @@
-import { motion } from "framer-motion";
+import { Signal } from "lucide-react";
 
 export default function PageError() {
   return (
-    <motion.h1
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transitionDuration: "1s" }}
-    >
+    <div className="h-screen flex items-center justify-center text-blue-500 text-4xl">
       Error 404
-    </motion.h1>
+    </div>
   );
 }

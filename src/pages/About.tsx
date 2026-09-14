@@ -12,16 +12,16 @@ const buttonVariants = {
   initial: { opacity: 0, y: -30 },
   animate: {},
 };
-const imgVariants = {
+const AboutVariants = {
   initial: { opacity: 0 },
   animate: {},
 };
 
 function About() {
   const [visibilityE, setvisibilityE] = useState(false);
-  const myFunction = () => {
-    console.log("L'élément est maintenant visible");
-  };
+  // const myFunction = () => {
+  //   console.log("L'élément est maintenant visible");
+  // };
 
   // Utilisez useEffect pour surveiller la visibilité de l'élément
   useEffect(() => {
@@ -32,10 +32,10 @@ function About() {
         (entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting && !visibilityE) {
-              myFunction();
+              // myFunction();
               SckillsVariants.animate = { opacity: 1, x: 0 };
               buttonVariants.animate = { opacity: 1, y: 0 };
-              imgVariants.animate = { opacity: 1 };
+              AboutVariants.animate = { opacity: 1 };
               setvisibilityE(true);
               // Arrêtez l'observation si vous voulez que la fonction ne soit appelée qu'une seule fois
               observer.unobserve(targetElement);
@@ -50,34 +50,39 @@ function About() {
   }, []);
 
   return (
-    <div className="flex h-screen bg-blue-50 text-black pt-9 px-14 " id="About">
-      <div className="flex gap-16">
+    <div className="flex text-black">
+      <motion.div
+        className="flex gap-16"
+        variants={AboutVariants}
+        initial={"initial"}
+        animate={visibilityE ? "animate" : "initial"}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         <aside className="flex-1">
           <div className="flex items-center justify-start gap-2">
             <div className="bg-indigo-500 w-2 h-2 rounded-full"></div>
             <h1 className="text-indigo-500 font-medium">About</h1>
           </div>
           <div className="flex gap-6">
-            <aside className="flex flex-col w-1/2 gap-6 pr-4 justify-start">
+            <motion.aside
+              className="flex flex-col w-1/2 gap-6 pr-4 justify-start"
+              variants={buttonVariants}
+              initial={"initial"}
+              animate={visibilityE ? "animate" : "initial"}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
               <h1 className="font-semibold text-2xl pt-2">Qui suis-je ?</h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                exercitationem beatae nostrum inventore, minus, non fugit aut
-                sint, id nemo aliquid quae ducimus harum dolore quam cum ipsa
-                optio officiis?
+                Je suis un développeur web junior passionné par la création
+                d'interfaces modernes, fonctionnelles et adaptées aux besoins
+                réels.
               </p>{" "}
               <p id="AboutId">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                exercitationem beatae nostrum inventore, minus, non fugit aut
-                sint.
+                Je me forme principalement au développement frontend et backend,
+                avec une attention particulière portée à la qualité de code, à
+                l'éxperience utilisateur et au technologies modernes.
               </p>
-              <motion.div
-                className="btn bg-white shadow-md border-0 flex w-2/3 p-2"
-                variants={buttonVariants}
-                initial={"initial"}
-                animate={visibilityE ? "animate" : "initial"}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
+              <div className="btn bg-white shadow-md border-0 flex w-2/3 p-2">
                 <div className="flex items-center justify-center gap-2 font-medium text-indigo-500">
                   <Download className="w-4" />
                   <input
@@ -86,15 +91,15 @@ function About() {
                     value={"Téléchaeger mon CV"}
                   />
                 </div>
-              </motion.div>
-            </aside>
+              </div>
+            </motion.aside>
             {
               <motion.div
                 className="w-1/2 shrink-0"
                 variants={buttonVariants}
                 initial={"initial"}
                 animate={visibilityE ? "animate" : "initial"}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <img src="/public/top.png" alt="" className="w-1/1" />
               </motion.div>
@@ -129,7 +134,7 @@ function About() {
             variants={buttonVariants}
             initial={"initial"}
             animate={visibilityE ? "animate" : "initial"}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <input
               type="button"
@@ -138,7 +143,7 @@ function About() {
             />
           </motion.div>
         </aside>
-      </div>
+      </motion.div>
     </div>
   );
 }
@@ -147,20 +152,12 @@ export function CardTechnologie({
   ...props
 }: Readonly<{ logo: techCardsTypeProps }>) {
   return (
-    <div className="flex items-center justify-center gap-3 w-5/11" {...props}>
+    <div className="flex items-start justify-center gap-3 w-5/11" {...props}>
       <img src={`/public/${logo.link}`} alt="" className="w-8" />
       <div className="flex flex-col gap-3 grow">
-        <div className="font-semibold flex justify-between">
-          <h2>{logo.nom}</h2>
-          <span>{logo.niveau}</span>
-        </div>
-        <div className="bg-gray-300 w-1/1 h-1.5 rounded-2xl">
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: `${logo.niveau}` }}
-            transition={{ duration: 0.5, delay: 1 }}
-            className={`bg-linear-to-l from-blue-800 to-blue-400 ${logo.nvClasse} h-1.5 rounded-2xl`}
-          ></motion.div>
+        <div className="flex flex-col justify-between">
+          <h2 className="font-semibold ">{logo.nom}</h2>
+          <p className="text-[12px]">{logo.desciption}</p>
         </div>
       </div>
     </div>

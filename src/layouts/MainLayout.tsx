@@ -5,7 +5,7 @@ export default function MainLayout() {
   return (
     <div className="text-[14px]">
       <NavBar />
-      <main className="w-full  pb-14 ">
+      <main className="w-full   h-full  bg-blue-50 pb-14 ">
         {/* Ici s'affichent les pages enfants */}
         <div className="">
           <Outlet />

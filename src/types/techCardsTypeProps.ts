@@ -1,8 +1,7 @@
-
 export type techCardsTypeProps = {
   id: number;
   nom: string;
   link: string;
-  nvClasse: string;
+  desciption: string;
   niveau: string;
 };

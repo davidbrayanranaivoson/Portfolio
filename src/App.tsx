@@ -2,7 +2,6 @@
 
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import Projet from "./pages/Projet";
 import Home from "./pages/Home";
 import PageError from "./pages/PageError";
 
@@ -16,7 +15,6 @@ export default function App() {
         {/* Pages normales */}
         <Route index element={<Home />} />
         <Route path="*" element={<PageError />} />
-        <Route path="Statistics" element={<Projet />} />
       </Route>
     </Routes>
   );

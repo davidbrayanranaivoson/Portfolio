@@ -11,12 +11,11 @@ export function CardHome({
 }: Readonly<CardsTypeProps>) {
   return (
     <motion.div
-      className={`badge-soft p-6 flex flex-col rounded-box absolute ${positionCard}`}
+      className={`badge-soft p-6 flex flex-col rounded-box absolute z-10 ${positionCard}`}
       {...props}
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 0.9, y: 0 }}
       transition={{ duration: 0.5, delay: 0.6 }}
-      style={{ zIndex: 51 }}
     >
       <span className="text-gray-400">{titleCard}</span>
       <span className="text-2xl font-semibold opacity-100">
