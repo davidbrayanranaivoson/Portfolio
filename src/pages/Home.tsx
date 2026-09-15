@@ -8,17 +8,17 @@ export default function Home() {
     <div className="flex flex-col relative">
       <Header />
       <div
-        className="flex flex-col bg-blue-50 pt-9 gap-7 h-screen px-14 mb-30"
+        className="flex flex-col bg-blue-50 pt-9 gap-7 lg:h-screen px-14 mb-30"
         id="About"
       >
-        <div className="h-2/3">
+        <div className="lg:h-2/3">
           <About />
         </div>
-        <div className="h-1/3">
+        <div className="lg:h-1/3">
           <Service />
         </div>
       </div>
-      <div className="h-64 bg-blue-50 text-base-200  px-14 ">
+      <div className="lg:h-64 bg-blue-50 text-base-200 px-14 ">
         <Contact />
       </div>
     </div>

@@ -53,7 +53,7 @@ function Service() {
           </div>
 
           <motion.div
-            className="flex flex-row gap-3 pt-8"
+            className="flex md:flex-row flex-col gap-3 pt-8"
             variants={buttonVariants}
             initial={"initial"}
             animate={visibilityE ? "animate" : "initial"}

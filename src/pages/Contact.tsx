@@ -45,12 +45,12 @@ function Contact() {
           Contact
         </h1>
       </div>
-      <div className="flex flex-row justify-between ">
-        <div className="w-1/4 flex flex-col  gap-2">
+      <div className="flex md:flex-row flex-col justify-between gap-y-14">
+        <div className="md:w-2/4 flex flex-col  gap-2">
           <h1 className="text-2xl font-semibold">Travaillons ensemble</h1>
           <p>
             N'ésitez pas à me contacter; Je serai ravi de discuter avec vous par
-            email ou sur watchapp.
+            email.
           </p>
           <span className="font-semibold">David Brayan RANAIVOSON</span>
           <span className="flex items-center gap-2 text-indigo-500">
@@ -64,10 +64,8 @@ function Contact() {
             <span>Toamasina, Madagascar</span>
           </span>
         </div>
-        <div className="w-1/4">
-          <Formulaire />
-        </div>
-        <div className="w-1/4 flex flex-col gap-3">
+
+        <div className="md:w-1/4 flex flex-col gap-3">
           <h4 className="text-indigo-500 font-semibold" id="Projets">
             Réseaux sociaux et Projets
           </h4>
@@ -76,7 +74,7 @@ function Contact() {
             target="_blank"
             className="flex items-center gap-3"
           >
-            <img src="/public/GitHub_Guide.png" alt="" className="w-6" />
+            <img src="/public/GitHub-Guide.png" alt="" className="w-6" />
             <span>GitHub</span>
           </a>
         </div>

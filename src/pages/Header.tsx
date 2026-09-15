@@ -11,7 +11,10 @@ import ImageLink from "../components/ImageLink";
 
 function Header() {
   return (
-    <header className="flex pt-4 gap-4 px-14 h-lvh bg-base-100" id="Accueil">
+    <header
+      className="flex pb-8 lg:pt-14 md:pt-4 gap-4 md:px-14 px-4 lg:h-lvh bg-base-100"
+      id="Accueil"
+    >
       <aside className="flex flex-col gap-7 justify-start pt-30">
         <div className="flex">
           <div className="flex text-[12px] gap-1 badge-soft rounded-full p-3 items-center justify-center">
@@ -19,7 +22,7 @@ function Header() {
             <input type="button" value="Disponible pour freelance" />
           </div>{" "}
         </div>
-        <p className="text-5xl font-semibold font-stretch-90% grow-0 h-3/10">
+        <p className="lg:text-5xl text-2xl font-semibold font-stretch-90% grow-0 ">
           Je crée des sites web <br />
           <span className="text-blue-500">modernes et performants</span>
           <br />
@@ -46,31 +49,31 @@ function Header() {
         </div>
         <ImageLink />
       </aside>
-      <aside className="flex  text-[12px] items-center justify-center relative grow pointer-events-none">
+      <aside className="flex  text-[12px] items-center justify-center relative grow pointer-events-none ">
         <div className="flex justify-center items-center">
           <CardHome
-            positionCard="top-35 left-10"
+            positionCard="top-35 left-10 lg:inline-block hidden"
             titleCard={"Développeur web"}
             noteCard={"Passionné "}
             iconCard={<Heart className="size-4" />}
           />
 
           <CardHome
-            positionCard="top-35 right-5"
+            positionCard="top-35 right-5  lg:inline-block hidden"
             titleCard={"Frontend"}
             noteCard={"Interface web modernes"}
             iconCard={<Expand className="size-4" />}
           />
 
           <CardHome
-            positionCard="bottom-10 right-25"
+            positionCard="bottom-10 right-25  lg:inline-block hidden"
             titleCard={"Compétences"}
             noteCard={"Compétences variées"}
             iconCard={<DivideSquare className="size-4" />}
           />
 
           <motion.div
-            className="rounded-full bg-linear-0 w-8/10 from-blue-300 to-blue-800"
+            className="rounded-full bg-linear-0 w-8/10 from-blue-300 to-blue-800  lg:inline-block hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.2 }}

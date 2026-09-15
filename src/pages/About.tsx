@@ -51,7 +51,7 @@ function About() {
   return (
     <div className="flex text-black">
       <motion.div
-        className="flex gap-16"
+        className="flex lg:flex-row flex-col  gap-16"
         variants={AboutVariants}
         initial={"initial"}
         animate={visibilityE ? "animate" : "initial"}
@@ -62,9 +62,9 @@ function About() {
             <div className="bg-indigo-500 w-2 h-2 rounded-full"></div>
             <h1 className="text-indigo-500 font-medium">About</h1>
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 justify-center md:justify-between w-1/1">
             <motion.aside
-              className="flex flex-col w-1/2 gap-6 pr-4 justify-start"
+              className="flex flex-col md:w-1/2 w-1/1 gap-6 pr-4 justify-start"
               variants={buttonVariants}
               initial={"initial"}
               animate={visibilityE ? "animate" : "initial"}
@@ -84,7 +84,7 @@ function About() {
             </motion.aside>
             {
               <motion.div
-                className="w-1/2 shrink-0"
+                className="lg:w-1/2 md:w-2/5 shrink-0 md:inline-block hidden"
                 variants={buttonVariants}
                 initial={"initial"}
                 animate={visibilityE ? "animate" : "initial"}
@@ -107,7 +107,7 @@ function About() {
           </h1>
           {
             <motion.div
-              className="flex flex-row justify-between gap-4 flex-wrap"
+              className="flex md:flex-row flex-col justify-between gap-4 flex-wrap"
               variants={SckillsVariants}
               initial={"initial"}
               animate={visibilityE ? "animate" : "initial"}
@@ -128,7 +128,10 @@ export function CardTechnologie({
   ...props
 }: Readonly<{ logo: techCardsTypeProps }>) {
   return (
-    <div className="flex items-start justify-center gap-3 w-5/11" {...props}>
+    <div
+      className="flex items-start justify-center gap-3 md:w-5/11 w-1/1"
+      {...props}
+    >
       <img src={`/public/${logo.link}`} alt="" className="w-8" />
       <div className="flex flex-col gap-3 grow">
         <div className="flex flex-col justify-between">
