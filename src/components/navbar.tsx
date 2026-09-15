@@ -44,13 +44,12 @@ export function NavBar() {
             <a href="#Contacts">Contacts</a>
           </ul>
         </nav>
-        <div>
-          <input
-            type="button"
-            value="Me contacter"
-            className="btn btn-info text-white bg-linear-to-l from-blue-400 to-blue-900"
-          />
-        </div>
+        <a
+          href="mailto:davidbrayanranaivoson@gmail.com"
+          className="btn btn-info text-white bg-linear-to-l from-blue-400 to-blue-900"
+        >
+          Me contacter
+        </a>
       </div>
     </motion.div>
   );

@@ -18,13 +18,11 @@ function Contact() {
             email ou sur watchapp.
           </p>
           <span className="font-semibold">David Brayan RANAIVOSON</span>
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-2 text-indigo-500">
             <Mail className="w-4" />
-            <a href="mailto:hopemarthe01@gmail.com">hopemarthe01@gmail.com</a>
-          </span>
-          <span className="flex items-center  gap-2">
-            <Phone className="w-4" />
-            <a href="tel:+261346427297">+261 34 64 272 97</a>
+            <a href="mailto:davidbrayanranaivoson@gmail.com">
+              davidbrayanranaivoson@gmail.com
+            </a>
           </span>
           <span className="flex items-center  gap-2">
             <House className="w-4" />
@@ -36,7 +34,11 @@ function Contact() {
         </div>
         <div className="w-1/4 flex flex-col gap-3">
           <h4 className="text-indigo-500 font-semibold">Réseaux sociaux</h4>
-          <a href="https://git.org" className="flex items-center gap-3">
+          <a
+            href="https://github.com/davidbrayanranaivoson"
+            target="_blank"
+            className="flex items-center gap-3"
+          >
             <img src="/public/GitHub_Guide.png" alt="" className="w-6" />
             <span>GitHub</span>
           </a>

@@ -37,10 +37,12 @@ function Header() {
             <input type="button" value={"Voir mes projets"} className="" />
             <ArrowRight width={"18px"} />
           </div>
-          <div className="btn btn-soft text-white border-2 border-zinc-600">
-            <input type="button" value={"Me contacter"} className="" />
-            <ContactRound width={"18px"} />
-          </div>
+          <a href="mailto:davidbrayanranaivoson@gmail.com">
+            <div className="btn btn-soft text-white border-2 border-zinc-600">
+              <input type="button" value={"Me contacter"} className="" />
+              <ContactRound width={"18px"} />
+            </div>
+          </a>
         </div>
         <ImageLink />
       </aside>
