@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-export function NavBar() {
+export function Sidebar() {
   const [fixedMenu, setFixedMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
   const handleShowMenu = () => {
