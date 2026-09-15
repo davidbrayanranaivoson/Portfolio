@@ -40,7 +40,6 @@ export function NavBar() {
             <a href="#About">Compétences</a>
             <a href="#Projets">Projets</a>
             <a href="#Services">Services</a>
-            <a href="#Temoignages">Témoignages</a>
             <a href="#Contacts">Contacts</a>
           </ul>
         </nav>

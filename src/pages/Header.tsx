@@ -50,25 +50,22 @@ function Header() {
         <div className="flex justify-center items-center">
           <CardHome
             positionCard="top-35 left-10"
-            titleCard={"Exprérience"}
-            expirienceCard={"+2 ans"}
-            noteCard={"Développement"}
+            titleCard={"Développeur web"}
+            noteCard={"Passionné "}
             iconCard={<Heart className="size-4" />}
           />
 
           <CardHome
             positionCard="top-35 right-5"
-            titleCard={"Projets réalisés"}
-            expirienceCard={"15+"}
-            noteCard={"Projets complets"}
+            titleCard={"Frontend"}
+            noteCard={"Interface web modernes"}
             iconCard={<Expand className="size-4" />}
           />
 
           <CardHome
             positionCard="bottom-10 right-25"
-            titleCard={"Clients satisfaits"}
-            expirienceCard={"10+"}
-            noteCard={"Recommandations"}
+            titleCard={"Compétences"}
+            noteCard={"Compétences variées"}
             iconCard={<DivideSquare className="size-4" />}
           />
 

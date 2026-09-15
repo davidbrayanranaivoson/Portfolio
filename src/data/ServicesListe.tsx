@@ -21,7 +21,7 @@ export const ServicesListe = [
       "Développement d'applications web avec frontend et backend, gestion des données et API.",
   },
   {
-    Title: "interface web modernes",
+    Title: "Interface web modernes",
     iconService: <Newspaper className={styleiconService} />,
     desciption:
       "Création d'interfaces React avec une attention particulière portée au responsive design et à l'expérience utilisateur.",

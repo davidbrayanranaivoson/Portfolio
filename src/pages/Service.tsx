@@ -73,8 +73,7 @@ export default Service;
 
 function CardService({ service }: Readonly<{ service: ServiceType }>) {
   return (
-    <div className="flex flex-row p-3 gap-3 bg-white rounded-box text-black">
-      <div className="w-2/10">{service.iconService}</div>
+    <div className="flex flex-row py-3 px-6 gap-3 bg-white rounded-box text-black">
       <div className="flex flex-col gap-2 w-7/10">
         <h1 className="text-[14px] font-semibold">{service.Title}</h1>
         <p className="text-[12px]">{service.desciption}</p>

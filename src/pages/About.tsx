@@ -1,4 +1,3 @@
-import { Download } from "lucide-react";
 import { techItems } from "../data/techItems";
 import type { techCardsTypeProps } from "../types/techCardsTypeProps";
 import { motion } from "framer-motion";
@@ -82,16 +81,6 @@ function About() {
                 avec une attention particulière portée à la qualité de code, à
                 l'éxperience utilisateur et au technologies modernes.
               </p>
-              <div className="btn bg-white shadow-md border-0 flex w-2/3 p-2">
-                <div className="flex items-center justify-center gap-2 font-medium text-indigo-500">
-                  <Download className="w-4" />
-                  <input
-                    type="button"
-                    className=""
-                    value={"Téléchaeger mon CV"}
-                  />
-                </div>
-              </div>
             </motion.aside>
             {
               <motion.div
@@ -129,19 +118,6 @@ function About() {
               ))}
             </motion.div>
           }
-          <motion.div
-            className="mt-8 text-center"
-            variants={buttonVariants}
-            initial={"initial"}
-            animate={visibilityE ? "animate" : "initial"}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <input
-              type="button"
-              className="btn btn-wide bg-purple-200 text-purple-600"
-              value={"Voir toutes mes compétences"}
-            />
-          </motion.div>
         </aside>
       </motion.div>
     </div>

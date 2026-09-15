@@ -1,3 +1,4 @@
 node_modules
 .vite
 package.copy.json
+dist
