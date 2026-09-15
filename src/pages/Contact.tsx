@@ -1,5 +1,4 @@
 import { House, Mail } from "lucide-react";
-import Formulaire from "../components/animations/Formulaire";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const buttonVariants = {

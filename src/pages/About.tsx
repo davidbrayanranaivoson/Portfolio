@@ -90,7 +90,11 @@ function About() {
                 animate={visibilityE ? "animate" : "initial"}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <img src="/public/top.png" alt="" className="w-1/1" />
+                <img
+                  src="/public/top.png"
+                  alt=""
+                  className="w-1/1 rounded-2xl"
+                />
               </motion.div>
             }
           </div>

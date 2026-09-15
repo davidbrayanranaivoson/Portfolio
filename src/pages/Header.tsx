@@ -49,7 +49,7 @@ function Header() {
         </div>
         <ImageLink />
       </aside>
-      <aside className="flex  text-[12px] items-center justify-center relative grow pointer-events-none ">
+      <aside className="flex w-1/2 text-[12px] items-center justify-center relative grow pointer-events-none ">
         <div className="flex justify-center items-center">
           <CardHome
             positionCard="top-35 left-10 lg:inline-block hidden"
@@ -82,6 +82,7 @@ function Header() {
               src="/public/my-profil.png"
               alt=""
               onDragStart={(e) => e.preventDefault()}
+              className="rounded-2xl"
             />
           </motion.div>
         </div>
