@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  ArrowRight,
   ContactRound,
   DivideSquare,
   Expand,
