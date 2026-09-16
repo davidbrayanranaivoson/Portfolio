@@ -36,7 +36,7 @@ export const techItems = [
     nom: "Tailwind Css",
     link: "logo-tailwind-css.png",
     niveau: "90%",
-    desciption: "Connaissance des bases de Tailwind, mise en palce de thème.",
+    desciption: "Connaissance des bases de Tailwind, mise en place de thème.",
   },
   {
     id: 6,
