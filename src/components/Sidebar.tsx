@@ -47,7 +47,7 @@ export function Sidebar() {
         </Link>
         <nav className={`lg:block ${showMenu ? "inline-block" : "hidden"}`}>
           <ul className="flex gap-5 lg:static absolute top-8 left-0 right-0 justify-center pb-2 bg-base-100">
-            <a href="/#Accueil">Accueil</a>
+            <a href="/Portfolio/#Accueil">Accueil</a>
             <a href="/#About" className="lg:inline-block hidden">
               À propos
             </a>
