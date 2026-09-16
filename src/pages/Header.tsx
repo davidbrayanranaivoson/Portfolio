@@ -36,10 +36,7 @@ function Header() {
           </p>
         </div>
         <div className="flex gap-4">
-          <div className="btn btn-info text-white bg-linear-to-l from-blue-400 to-blue-900">
-            <input type="button" value={"Voir mes projets"} className="" />
-            <ArrowRight width={"18px"} />
-          </div>
+          
           <a href="mailto:davidbrayanranaivoson@gmail.com">
             <div className="btn btn-soft text-white border-2 border-zinc-600">
               <input type="button" value={"Me contacter"} className="" />
