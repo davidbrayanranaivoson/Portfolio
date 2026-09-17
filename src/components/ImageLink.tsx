@@ -13,7 +13,7 @@ export default function ImageLinkComponent() {
         {ImageLink.map((link) => (
           <img
             key={link}
-            src={`/public/${link}`}
+            src={`public/${link}`}
             alt=""
             width="50px"
             className=""
