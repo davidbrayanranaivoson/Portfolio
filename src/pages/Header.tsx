@@ -75,7 +75,7 @@ function Header() {
             transition={{ duration: 0.3, delay: 0.2 }}
           >
             <img
-              src="/public/my-profil.png"
+              src={`${import.meta.env.BASE_URL}my-profil.png`}
               alt=""
               onDragStart={(e) => e.preventDefault()}
               className="rounded-2xl"
