@@ -91,7 +91,7 @@ function About() {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <img
-                  src="/public/top.png"
+                  src={`${import.meta.env.BASE_URL}top.png`}
                   alt=""
                   className="w-1/1 rounded-2xl"
                 />
